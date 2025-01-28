@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Calgary_DEMO;
+    src: url(Calgary_DEMO.ttf);
+}
+
+body{
+    font-family: Calgary_DEMO;
+    background-color: #102b55;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    background-color: #edd5b1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1{
+    text-align: center;
+    color: #102b55;
+}
+
+.form-container{
+    
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+input::placeholder{
+    font-family: Calgary_DEMO;
+}
+
+#book-title, #book-author{
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #010849;
+}
+
+#add-book{
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #102b55;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#add-book:hover{
+    background-color: #07172f;
+
+}
+
+#book-list{
+    list-style: none;
+    padding: 0;
+}
+
+#book-list li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #edd5b1;
+    border: 1px solid #c8ad85;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#book-list li .details{
+    flex: 1;
+}
+
+#book-list li button{
+    padding: 5px 10px;
+    font-size: 0.9em;
+    color: white;
+    background-color: #516a8d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#book-list li button:hover{
+    background-color: rgb(57, 79, 110);
+}
+
+button{
+    font-family: Calgary_DEMO;
+}
